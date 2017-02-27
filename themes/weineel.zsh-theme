@@ -1,4 +1,4 @@
-# smt.zsh-theme, based on dogenpunk by Matthew Nelson.
+# weineel.zsh-theme, based on dogenpunk by Matthew Nelson.
 
 MODE_INDICATOR="%{$fg_bold[red]%}❮%{$reset_color%}%{$fg[red]%}❮❮%{$reset_color%}"
 local return_status="%{$fg[red]%}%(?..⏎)%{$reset_color%} "
@@ -80,8 +80,7 @@ function git_time_since_commit() {
     fi
 }
 
-PROMPT='
-%{$fg_bold[yellow]%}➤ %{$fg[blue]%}%m%{$reset_color%} %{$fg[cyan]%}%~ %{$reset_color%}$(git_prompt_short_sha)$(git_prompt_info)
+PROMPT='%{$fg_bold[yellow]%}➤ %{$fg[blue]%}%m%{$reset_color%} %{$fg[cyan]%}%~ %{$reset_color%}$(git_prompt_short_sha)$(git_prompt_info)
 %{$reset_color%}$(prompt_char) : '
 # %{$fg[red]%}%!%{$reset_color%} $(prompt_char) %{$fg[yellow]%}: '
 
